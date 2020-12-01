@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Attack
+  - Heavy
+  - ShootingStar
+  - Death
+  - Checkpoint
+  - Explosion
+  - Bounds
+  - MovingPlatform
+  - Ground
+  - Water
+  - Boat
+  - Fire
+  - PlatformController
+  - Level2Projectile
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Boat
+  - Enemy
+  - Heavy
+  - ShootingStar
+  - Checkpoint
+  - Ground
+  - Bounds
+  - PostProcessing
+  - PlatformController
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 185061001
+    locked: 0
+  - name: OceanSnip
+    uniqueID: 3040066057
+    locked: 0
+  - name: MovingBackground
+    uniqueID: 3245867449
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2214833437
+    locked: 0
+  - name: Foreground
+    uniqueID: 2745302637
+    locked: 0
