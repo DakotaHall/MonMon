@@ -26,8 +26,6 @@ public class FadeTextScript : MonoBehaviour
                 beginFade = false;
             }
         }
-        // if(Input.GetKeyDown(KeyCode.F)){
-        //     beginFade = true;
-        // }
+
     }
 }

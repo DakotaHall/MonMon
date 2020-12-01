@@ -9,7 +9,6 @@ public class NPCScript : MonoBehaviour
     public GameObject pointer;
     public GameObject textBubble;
     public string[] textArray;
-    //public Text npcText;
     public int textNum = 0;
     public SpriteRenderer faceSprite;
     public Sprite monmonFace;
@@ -123,12 +122,6 @@ public class NPCScript : MonoBehaviour
             {
                 faceSprite.sprite = oldLadyFace;
             }
-            // if (textNum == 24)
-            // {
-            //     letterByLetter.letterNum = textArray[textNum].Length;
-            //     buttonCanvas.SetActive(true);
-            //     yesButton.Select();
-            // }
         }
         else if (textBubble.activeSelf && Input.GetKeyDown(KeyCode.E))
         {

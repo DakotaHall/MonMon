@@ -26,34 +26,11 @@ public class PumpkinBoiScript : MonoBehaviour
 
     void Update()
     {
-        // if(myRigidbody != null){
-        //     if(goingDown){
-        //         if(transform.position.y > minYPosition.y){
-        //              transform.position = Vector3.MoveTowards(transform.position,minYPosition,bounceSpeed*Time.deltaTime);
-        //         }
-        //         else if(transform.position.y <= minYPosition.y){
-        //             transform.position = minYPosition;
-        //             goingDown = false;
-        //         }
-        //     } else{
-        //         if(transform.position.y < originalPos.y){
-        //             transform.position = Vector3.MoveTowards(transform.position,originalPos,bounceSpeed*Time.deltaTime);
-        //         } else if(transform.position.y > originalPos.y){
-        //             transform.position = originalPos;
-        //         }
-        //     }
-           
-        
-        // }
-        
 
         
         transform.localEulerAngles += Vector3.forward*Time.deltaTime*rotateSpeed;
     }
 
     void OnCollisionEnter2D(Collision2D other){
-        // if(other.gameObject.tag == "Player"){
-        //     goingDown = true;
-        // }
     }
 }

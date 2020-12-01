@@ -5,17 +5,14 @@ using TMPro;
 using UnityEngine.Experimental.Rendering.Universal;
 public class WitchDialogueScript : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject textBubble;
     public string[] textArray;
-    //public Text npcText;
     public int textNum = 0;
     public SpriteRenderer faceSprite;
     public Sprite monmonFace;
     public Sprite witchFace;
     public bool canInteract;
     public TextMeshPro npcText;
-    // public int[] whichFaceArray;
     public LetterByLetterScript letterByLetter;
     public PlayerScript player;
     public Light2D oldLadyLight;
@@ -117,15 +114,6 @@ public class WitchDialogueScript : MonoBehaviour
                     textNum = 20;
                     textBubble.SetActive(false);
                     pointer.SetActive(false);
-//                     player.ResetState();
-//                     letterByLetter.letterNum = 0;
-// //                    letterByLetter.completeText = textArray[textNum];
-//                     letterByLetter.finished = false;
-//                     witchTracker.enabled = true;
-//                        cameraFollow.enabled = true;
-//                         finalWitch.enabled = true;
-                        
-                    
                 }
             }
             else

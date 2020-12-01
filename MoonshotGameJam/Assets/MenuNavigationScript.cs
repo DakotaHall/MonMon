@@ -23,7 +23,6 @@ public class MenuNavigationScript : MonoBehaviour
     public GameObject controlPanel;
     public GameObject controlButton;
     public Texture2D cursorTexture;
-    // Start is called before the first frame update
     void Start()
     {
          PlayerPrefs.DeleteAll();
@@ -31,7 +30,6 @@ public class MenuNavigationScript : MonoBehaviour
          Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(play){
@@ -70,7 +68,6 @@ public class MenuNavigationScript : MonoBehaviour
                 settings.SetActive(false);
                 EventSystem.current.SetSelectedGameObject(lastSelectedButton);
         } else if(panel == "Settings"){
-          //  EventSystem.current.SetSelectedGameObject(settingsBackButton);
                 quitPanel.SetActive(false);
                 mainMenuOptions.SetActive(false);
                 settings.SetActive(true);
@@ -78,7 +75,6 @@ public class MenuNavigationScript : MonoBehaviour
             play = true;
             fadeScreen.fadeOut = true;
         } else if(panel == "Quit"){
-         //   EventSystem.current.SetSelectedGameObject(quitBackButton);
                 quitPanel.SetActive(true);
                 mainMenuOptions.SetActive(false);
                 settings.SetActive(false);
@@ -86,7 +82,6 @@ public class MenuNavigationScript : MonoBehaviour
     }
     public void EnableControls(){
         controlPanel.SetActive(true);
-     //   EventSystem.current.SetSelectedGameObject(controlsBackButton);
     }
     public void DisableControls(){
         controlPanel.SetActive(false);

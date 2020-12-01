@@ -10,7 +10,6 @@ public class LetterByLetterScript : MonoBehaviour
     public float waitTime;
     public bool finished;
     public int letterNum;
-    // public AudioSource soundEffect;
     void Update()
     {
         
@@ -18,10 +17,6 @@ public class LetterByLetterScript : MonoBehaviour
             
             if(Time.time > waitTime){
                
-            //    soundEffect.volume = 0;
-            //    soundEffect.Stop();
-            //     soundEffect.volume = 1;
-            //      soundEffect.Play();
                 
                 waitTime = Time.time + timeBetweenLetters;
                 textMeshPro.text = completeText.Substring(0,letterNum);
@@ -29,11 +24,6 @@ public class LetterByLetterScript : MonoBehaviour
                 if(letterNum >= completeText.Length+1){
                     finished = true;
                 }
-            } else{
-          //      soundEffect.volume = 0;
-            }
-        } else{
-         //   soundEffect.volume = 0f;
-        }
+            } 
     }
 }

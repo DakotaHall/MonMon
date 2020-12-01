@@ -98,7 +98,6 @@ public class FinalWitchScript : MonoBehaviour
                 gameObject.SetActive(false);
             }
 
-            // 
         }
         switch (enemyState)
         {

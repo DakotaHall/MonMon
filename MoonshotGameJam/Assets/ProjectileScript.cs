@@ -51,6 +51,5 @@ public class ProjectileScript : MonoBehaviour
 
     public void Dissipate(){
         GetComponent<SpriteRenderer>().enabled = false;
-     //   gameObject.SetActive(false);
     }
 }

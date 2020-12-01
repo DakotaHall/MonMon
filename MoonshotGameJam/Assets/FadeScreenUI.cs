@@ -27,7 +27,6 @@ public class FadeScreenUI : MonoBehaviour
          else if(fadeOut){
             fadeScreen.color = new Color(0,0,0,fadeScreen.color.a+1*Time.deltaTime);
             if(fadeScreen.color.a <= 0){
-               // fadeOut = false;
             }
         }
     }

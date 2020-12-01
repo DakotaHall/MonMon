@@ -6,7 +6,6 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class ExplodingEnemyScript : MonoBehaviour
 {
-    //public float enemyHealth = 34;
     public EnemyHealthScript enemyHealth;
     public float attackCooldown;
     public float attackCooldownTime = 3f;

@@ -96,7 +96,6 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         characterSprite = sprite.sprite;
-        //Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         previousHealth = health;
         myAnim.SetBool("Grounded", true);

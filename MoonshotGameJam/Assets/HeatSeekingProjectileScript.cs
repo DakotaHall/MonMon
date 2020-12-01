@@ -56,7 +56,6 @@ public class HeatSeekingProjectileScript : MonoBehaviour
     }
 
     public void Dissipate(){
-        //gameObject.SetActive(false);
          GetComponent<SpriteRenderer>().enabled = false;
     }
 }

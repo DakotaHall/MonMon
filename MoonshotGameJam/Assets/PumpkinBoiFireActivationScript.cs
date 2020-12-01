@@ -66,7 +66,4 @@ public class PumpkinBoiFireActivationScript : MonoBehaviour
     public void DisableCollider(){
         boxCollider.enabled = false;
     }
-    // public void PlayFireSound(){
-    //     fireSound.Play();
-    // }
 }

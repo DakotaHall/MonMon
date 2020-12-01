@@ -12,22 +12,6 @@ public class PlatformControllerScript : MonoBehaviour
     public LightAbilityScript lightAbility;
     void Update()
     {
-        // if(platform != null){
-        //     if(activated){
-        //     if(lightAbility.ray1Object != this.gameObject && lightAbility.ray2Object != this.gameObject && lightAbility.ray3Object != this.gameObject){
-        //         activated = false;
-        //         return;
-        //     }
-        //     if(Vector3.Distance(platform.transform.position,platformEnd.position) > .1f){
-        //         platform.transform.position = Vector2.MoveTowards(platform.transform.position,platformEnd.position,moveSpeed*Time.deltaTime);
-        //     }
-        // } else{
-        //     if(Vector3.Distance(platform.transform.position,platformStart.position) > .1f){
-        //         platform.transform.position = Vector2.MoveTowards(platform.transform.position,platformStart.position,moveSpeed/5*Time.deltaTime);
-        //     }
-            
-        // }
-        // }
         
     }
 }

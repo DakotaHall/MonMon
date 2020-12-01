@@ -5,7 +5,6 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class EnemyScript : MonoBehaviour
 {
-    //public float enemyHealth = 100;
     public float attackCooldown;
     public float attackCooldownTime = 3f;
     public bool movingOntoScreen = true;

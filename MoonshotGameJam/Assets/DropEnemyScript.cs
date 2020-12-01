@@ -63,9 +63,6 @@ public class DropEnemyScript : MonoBehaviour
                 RaycastHit2D leftRay = Physics2D.Raycast(new Vector3(boxCollider.bounds.min.x,transform.position.y,0),Vector3.down,dropLength,playerMask);
         RaycastHit2D rightRay = Physics2D.Raycast(new Vector3(boxCollider.bounds.max.x,transform.position.y,0),Vector3.down,dropLength,playerMask);
         RaycastHit2D midRay = Physics2D.Raycast(transform.position,Vector3.down,dropLength,playerMask);
-                //  Debug.DrawRay(transform.position,Vector3.down*dropLength,Color.red);
-                //  Debug.DrawRay(new Vector3(boxCollider.bounds.min.x,transform.position.y,0),Vector3.down*dropLength,Color.red);
-                //  Debug.DrawRay(new Vector3(boxCollider.bounds.max.x,transform.position.y,0),Vector3.down*dropLength,Color.red);
                 transform.position = startPos;
                 if((leftRay || rightRay || midRay) && !reset && !waitingForDrop){
                     waitingForDrop = true;

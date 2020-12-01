@@ -12,18 +12,11 @@ public class LightAbilityScript : MonoBehaviour
     public float lightValue = -90;
     public Vector3 previousMousePos;
     public List<GameObject> hitEnemies;
-    // public GameObject[] ray1Object;
-    // public GameObject[] ray2Object;
-    // public GameObject[] ray3Object;
     public PlayerScript player;
     public ParticleSystem blueDotsSystem;
     public Camera mainCam;
     void OnEnable()
     {
-        //    transform.localEulerAngles = new Vector3(0,0,-90);
-        //    lightValue = -90;
-        //    Cursor.lockState = CursorLockMode.Locked;
-        //     Cursor.lockState = CursorLockMode.None;  
         previousMousePos = Input.mousePosition;
     }
     void OnDisable()
@@ -39,15 +32,6 @@ public class LightAbilityScript : MonoBehaviour
     {
         maskLight.pointLightOuterRadius = moonlight.moonLight / 2;
 
-        // Vector3 mouseDif = Input.mousePosition - previousMousePos;
-        // previousMousePos = Input.mousePosition;
-        // lightValue += mouseDif.y/5;
-        // if(lightValue > -1){
-        //     lightValue = -1;
-        // } else if(lightValue < -179){
-        //     lightValue = -179;
-        // }
-        // transform.localEulerAngles = new Vector3(0,0,lightValue);
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0;
         transform.up = (mousePosition - transform.position).normalized;
